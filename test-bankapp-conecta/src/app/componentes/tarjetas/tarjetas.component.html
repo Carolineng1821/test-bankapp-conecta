@@ -75,7 +75,7 @@
 
 
 <!-- Modal -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -83,7 +83,8 @@
             height="90px" class="img-fluid" alt="Responsive image" class="navbar-text"></h5>
         <span class="titulo"> AGREGAR TARJETA</span>
       </div>
-      <div class="form-group pad" [formGroup]="form" >
+      <!-- <div class="form-group pad" [formGroup]="form" > -->
+        <div class="form-group pad">
           <input type="text" id="ntar" name="ntar" class="form-control" placeholder="Numero de tarjeta" value=""
             formControlName="ntar"><br>
           <div class="row">
@@ -103,14 +104,15 @@
           <input type="text" id="tcta" name="tcta" class="form-control" placeholder="Tipo de cuenta" value=""
             formControlName="tcta"><br>
           <br><br>
-          <button type="submit" name="button" (click)="onSub()" value="Enviar">enviar</button>
-
+          
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary btnf" data-dismiss="modal">Cancelar</button>
-            <button type="submit" name="button" value="Enviar" (click)="onSub()" class="btn btn-primary btnc btnf">Agregar
-              Tarjetas</button>
+            <!-- <button type="submit" name="button" value="Enviar" (click)="onSub()" class="btn btn-primary btnc btnf">Agregar
+              Tarjetas</button> -->
+              <button type="submit" name="button" value="Enviar" class="btn btn-primary btnc btnf">Agregar
+                Tarjetas</button>
           </div>
       </div>
     </div>
   </div>
-</div> -->
+</div>
