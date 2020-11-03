@@ -1,4 +1,6 @@
-<p>movimientos works!</p>
+
+<p><strong>MOVIMIENTOS</strong></p>
+
 
 <table class="table blanco" >
     <thead>
@@ -9,10 +11,11 @@
       </tr>
     </thead>
     <tbody *ngFor="let mov of movimiento">
-        
+        <!-- mandamos llamar la informacion mediante la variable -->
       <tr>
         <td>{{mov.fecha}}</td>
         <td>{{mov.descripcion}}</td>
+        <!-- validamos el color del monto segun el tipo -->
         <td [ngStyle]="{'color' :mov.tipo === 'abono' ? 'green' : 'red'}"><div > {{mov.monto}}</div></td>
         
       </tr>
