@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MotsService } from '../../services/mots.service';
+import { MovimientosModule } from '../../models/movimientos.module';
 
 @Component({
   selector: 'app-movimientos',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovimientosComponent implements OnInit {
 
-  constructor() { }
+  movimiento: MovimientosModule [];
+  
+  constructor(private motsService: MotsService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+this.motsService.getMots().subscribe((movi: any) =>{
+  this.movimiento = movi.movimientos;
+  console.log(this.movimiento);
+})
+  
   }
 
 }

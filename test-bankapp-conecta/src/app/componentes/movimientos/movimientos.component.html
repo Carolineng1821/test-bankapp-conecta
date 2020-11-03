@@ -8,15 +8,13 @@
         <th scope="col-md-auto">Monto</th>
       </tr>
     </thead>
-    <!-- <tbody *ngFor="let mov of movimiento"> -->
-        <tbody>
+    <tbody *ngFor="let mov of movimiento">
+        
       <tr>
-        <!-- <td>{{mov.fecha}}</td>
+        <td>{{mov.fecha}}</td>
         <td>{{mov.descripcion}}</td>
-        <td [ngStyle]="{'color' :mov.tipo === 'abono' ? 'green' : 'red'}"><div > {{mov.monto}}</div></td> -->
-        <td>21/11/2018</td>
-        <td>Compra Uber eats</td>
-        <td><div > 300</div></td>
+        <td [ngStyle]="{'color' :mov.tipo === 'abono' ? 'green' : 'red'}"><div > {{mov.monto}}</div></td>
+        
       </tr>
     </tbody>
   </table>

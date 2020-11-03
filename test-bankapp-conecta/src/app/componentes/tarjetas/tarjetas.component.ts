@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { TarjetasModule } from '../../models/tarjetas.module';
+import { CardService } from '../../services/card.service';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+
 
 @Component({
   selector: 'app-tarjetas',
@@ -7,9 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarjetasComponent implements OnInit {
 
-  constructor() { }
+  tarjeta: TarjetasModule [];
 
-  ngOnInit(): void {
+  constructor(private cardService: CardService) { }
+
+  ngOnInit() {
+
+    // aqui consumimos la api
+    this.cardService.getCards().subscribe((trj: any) =>{
+      this.tarjeta = trj.tarjetas;
+      console.log(this.tarjeta)
+    })
   }
 
 }

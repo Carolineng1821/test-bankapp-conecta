@@ -3,41 +3,41 @@
   <tbody>
     <tr>
       <th>
-        <!-- <div *ngFor="let tar of tarjeta"
+        <!-- mandamos llamar los datos con las variables correspondientes -->
+        <!-- condicionamos el estilo de la tajeta para que cambie de color -->
+        <div *ngFor="let tar of tarjeta"
           [ngStyle]="{'background-color' :tar.estado === 'desactivada' ? '#a2e2d2' : 'aqua'}" class="card lblanco"
-          style="width: 20rem; height: 8rem; font-size: small; margin-bottom: 20px;">-->
-          <div class="card lblanco"
           style="width: 20rem; height: 8rem; font-size: small; margin-bottom: 20px;">
           <table>
             <tbody>
               <tr style="text-align: end;">
                 <td>
-                  <!-- $ {{tar.saldo}}.00 -->
-                  $1000.00
+                  <!-- mandamos llamar los datos con las variables correspondientes -->
+                  $ {{tar.saldo}}.00
                 </td>
               </tr>
               <tr>
                 <td>
-                  <!-- {{tar.estado}} -->
-                  Activa
+                  <!-- mandamos llamar los datos con las variables correspondientes -->
+                  {{tar.estado}}
                 </td>
               </tr>
               <tr>
                 <td>
-                  <!-- <strong>{{tar.tarjeta}}</strong> -->
-                  <strong>1234-5678-9012-3456</strong>
+                  <!-- mandamos llamar los datos con las variables correspondientes -->
+                  <strong>{{tar.tarjeta}}</strong>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <!-- {{tar.nombre}} -->
-                  Carolina Neri
+                  <!-- mandamos llamar los datos con las variables correspondientes -->
+                  {{tar.nombre}}
                 </td>
               </tr>
               <tr>
                 <td>
-                  <!-- {{tar.tipo}} -->
-                  Debito
+                  <!-- mandamos llamar los datos con las variables correspondientes -->
+                  {{tar.tipo}}
                 </td>
               </tr>
               <tr style="text-align: end;">
@@ -47,7 +47,7 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> 
       </th>
     </tr>
     <tr>
@@ -84,7 +84,7 @@
         <span class="titulo"> AGREGAR TARJETA</span>
       </div>
       <!-- <div class="form-group pad" [formGroup]="form" > -->
-        <div class="form-group pad">
+        <div class="form-group pad" >
           <input type="text" id="ntar" name="ntar" class="form-control" placeholder="Numero de tarjeta" value=""
             formControlName="ntar"><br>
           <div class="row">
