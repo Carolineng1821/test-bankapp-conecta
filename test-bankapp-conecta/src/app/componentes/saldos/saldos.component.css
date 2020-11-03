@@ -1,0 +1,10 @@
+.jumbotron{
+    background-color: #04445b !important;
+    border-radius: 0%;
+    padding-inline-start: 4rem;
+    padding: 1rem;
+
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    margin-left: 1rem;
+}

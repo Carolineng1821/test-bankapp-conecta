@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "test-bankapp-conecta"
+    }
+  },
+  "defaultProject": "test-bankapp-conecta",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,116 @@
+<p><strong>MIS CUENTAS</strong></p>
+<table>
+  <tbody>
+    <tr>
+      <th>
+        <!-- <div *ngFor="let tar of tarjeta"
+          [ngStyle]="{'background-color' :tar.estado === 'desactivada' ? '#a2e2d2' : 'aqua'}" class="card lblanco"
+          style="width: 20rem; height: 8rem; font-size: small; margin-bottom: 20px;">-->
+          <div class="card lblanco"
+          style="width: 20rem; height: 8rem; font-size: small; margin-bottom: 20px;">
+          <table>
+            <tbody>
+              <tr style="text-align: end;">
+                <td>
+                  <!-- $ {{tar.saldo}}.00 -->
+                  $1000.00
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- {{tar.estado}} -->
+                  Activa
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- <strong>{{tar.tarjeta}}</strong> -->
+                  <strong>1234-5678-9012-3456</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- {{tar.nombre}} -->
+                  Carolina Neri
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!-- {{tar.tipo}} -->
+                  Debito
+                </td>
+              </tr>
+              <tr style="text-align: end;">
+                <td>
+                  <img src="/assets/master.png" width="30px" height="18px" alt="">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <div class="">
+
+          <button type="button" class="btn btn-outline-success boton" data-toggle="modal" data-target="#exampleModal">
+            AGREGAR TARJETA <span></span>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+              <path fill-rule="evenodd"
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg>
+          </button>
+
+
+        </div>
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><img src="/assets/bankaqua.png" position="end" width="150px"
+            height="90px" class="img-fluid" alt="Responsive image" class="navbar-text"></h5>
+        <span class="titulo"> AGREGAR TARJETA</span>
+      </div>
+      <div class="form-group pad" [formGroup]="form" >
+          <input type="text" id="ntar" name="ntar" class="form-control" placeholder="Numero de tarjeta" value=""
+            formControlName="ntar"><br>
+          <div class="row">
+            <div class="col"><input type="text" id="cta" name="cta" class="form-control" placeholder="Cuenta" value=""
+                formControlName="cta"></div>
+            <div class="col"><input type="text" id="issu" name="issu" class="form-control" placeholder="Issuer" value=""
+                formControlName="issu"></div>
+          </div><br>
+          <input type="text" id="nom" name="nom" class="form-control" placeholder="Nombre de tarjeta" value=""
+            formControlName="nom"><br>
+          <input type="text" id="mar" name="mar" class="form-control" placeholder="Marca" value=""
+            formControlName="mar"><br>
+          <input type="text" id="stat" name="stat" class="form-control" placeholder="Estatus" value=""
+            formControlName="stat"><br>
+          <input type="text" id="sld" name="sld" class="form-control" placeholder="Saldo" value=""
+            formControlName="sld"><br>
+          <input type="text" id="tcta" name="tcta" class="form-control" placeholder="Tipo de cuenta" value=""
+            formControlName="tcta"><br>
+          <br><br>
+          <button type="submit" name="button" (click)="onSub()" value="Enviar">enviar</button>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btnf" data-dismiss="modal">Cancelar</button>
+            <button type="submit" name="button" value="Enviar" (click)="onSub()" class="btn btn-primary btnc btnf">Agregar
+              Tarjetas</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div> -->

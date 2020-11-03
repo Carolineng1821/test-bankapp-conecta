@@ -1,0 +1,43 @@
+.boton{
+    width: 20rem; 
+    height: 3rem;
+}
+
+.titulo{
+    font-size: 15pt;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+ input:focus, input[type]:focus  button:focus{
+    border-color: #08bd92 !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #08bd92 !important;
+    outline: 0 none !important;
+}
+
+:focus::-webkit-input-placeholder{color:#08bd92;} 
+
+.pad{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.modal-header {
+    border-bottom: 0px;
+}
+
+.modal-footer {
+    border-top: 0px;
+    justify-content: center
+}
+
+.btnf {
+    border-radius: 0% !important;
+    width: 170px;
+}
+
+.btnc {
+    background-color: #08bd92;
+    border-color: #08bd92;
+}

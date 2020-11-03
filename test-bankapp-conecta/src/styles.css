@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+.azul{
+    background-color: #01455c;
+    height: 25%;
+}
+
+.aqua{
+    background-color: #08bd92;
+}
+
+.laqua{
+    color: #08bd92;
+}
+
+.acielo{
+    background-color: #a2e2d2;
+}
+
+.gris{
+    background-color: #d1d1d1;
+}
+
+.lgris{
+    color: gray;
+}
+
+.blanco{
+    background-color: white;
+}
+
+.lblanco{
+    color: white;
+}
+
+.lazul{
+    color: #13857b;
+}
+
+
+.grisf{
+    background-color: #f8f8f8;
+    padding: 20px;
+    padding-left: 40px;
+}

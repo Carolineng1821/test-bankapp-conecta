@@ -1,0 +1,23 @@
+.active{
+    background-color: #f5f5f5 !important;
+    border-radius: 0% !important;
+    color: #0fbd94 !important;
+}
+
+/* .nav{
+    height: 5rem;
+} */
+
+.navbar-text {
+    display: inline-block;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.text-sm-center {
+    padding-top: 2rem;
+}
+
+.backn{
+    background-color: white;
+}
